@@ -1,0 +1,23 @@
+{
+	"geode": "4.7.0",
+	"gd": {
+		"win": "2.2074",
+		"android": "2.2074",
+		"mac": "2.2074",
+		"ios": "2.2074"
+	},
+	"id": "fryy_55.free-editor-zoom",
+	"name": "Free Editor Zoom",
+	"version": "v1.0.0",
+	"developer": "Fryy_55",
+	"description": "Allows to zoom in and out beyond limits",
+	"tags": [
+		"offline",
+		"editor",
+		"enhancement"
+	],
+	"links": {
+		"source": "https://github.com/Fryy55/free-editor-zoom",
+		"community": "https://discord.com/invite/4vqtjfdhTk"
+	}
+}
