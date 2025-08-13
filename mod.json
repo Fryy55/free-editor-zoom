@@ -11,6 +11,45 @@
 	"version": "v1.0.0",
 	"developer": "Fryy_55",
 	"description": "Allows to zoom in and out beyond limits",
+	"settings": {
+		"zoom-title": {
+			"type": "title",
+			"name": "Zoom Settings"
+		},
+		"zoom-factor": {
+			"type": "float",
+			"name": "Zoom Factor",
+			"description": "Changes the <cc>factor</c> that's used when zooming.\nThe <cf>higher</c> the <cc>factor</c> - the <cg>faster</c> the <cj>zooming</c>",
+			"min": 0.01,
+			"default": 0.15,
+			"max": 5
+		},
+		"zoom-min": {
+			"type": "float",
+			"name": "Minimum Zoom",
+			"min": 0.001,
+			"default": 0.05,
+			"max": 0.1
+		},
+		"zoom-max": {
+			"type": "float",
+			"name": "Maximum Zoom",
+			"min": 4,
+			"default": 1000,
+			"max": 1000000
+		},
+
+		"ui-title": {
+			"type": "title",
+			"name": "UI Settings"
+		},
+		"ui-toggle": {
+			"type": "bool",
+			"name": "Zoom Label",
+			"description": "<cg>Enables</c>/<cr>disables</c> the `Zoom` label in the editor",
+			"default": true
+		}
+	},
 	"tags": [
 		"offline",
 		"editor",
@@ -19,5 +58,17 @@
 	"links": {
 		"source": "https://github.com/Fryy55/free-editor-zoom",
 		"community": "https://discord.com/invite/4vqtjfdhTk"
+	},
+	"dependencies": {
+		"geode.node-ids": {
+			"version": ">=v1.21.1",
+			"importance": "required"
+		}
+	},
+	"incompatibilities": {
+		"hjfod.betteredit": {
+			"version": ">=v6.10.0-beta.1",
+			"importance": "conflicting"
+		}
 	}
 }
