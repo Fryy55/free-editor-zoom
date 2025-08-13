@@ -14,10 +14,10 @@ class $modify(HEditorUI, EditorUI) {
 	};
 
 
-    $override
+	$override
 	bool init(LevelEditorLayer* lel);
 
-    $override
+	$override
 	void updateZoom(float zoom);
 
 
@@ -25,12 +25,12 @@ class $modify(HEditorUI, EditorUI) {
 	//* reimplementations woo
 	static void onModify(auto& self);
 
-    $override
+	$override
 	void zoomIn(CCObject*);
 
-    $override
+	$override
 	void zoomOut(CCObject*);
 
-    $override
+	$override
 	void scrollWheel(float p0, float p1);
 };
